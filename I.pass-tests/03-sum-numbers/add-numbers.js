@@ -12,13 +12,14 @@
 
 // const suma = addNumbers();
 // numbers => numbers.forEach(number => number + number);
-let sum = 0
+
 
 function addNumbers(numbers) {
-  numbers.forEach(function(number) {
-    sum = sum + number
-  })
-  return sum
+    let sum = 0
+    numbers.forEach(function(number) {
+        sum += number
+    })
+    return sum
 }
 
 module.exports = addNumbers
