@@ -26,3 +26,18 @@ module.exports = carSales;
 //   return contador + car.price;
 // }, 0);
 // console.log(finalmente, "finalmente wuju");
+
+/**OTRA FORMA. */
+// const reciboDatos = {};
+
+// function carSales(Probando) {
+//     Probando.forEach(element => {
+//         if (reciboDatos[element.make] == undefined) {
+//             reciboDatos[element.make] = element.price;
+//         } else {
+//             reciboDatos[element.make] += element.price; // += es lo mismo que decir que volver a poner los datos del igual
+//         }
+//     });
+//     return reciboDatos;
+// }
+// module.exports = carSales;
