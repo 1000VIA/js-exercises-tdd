@@ -1,14 +1,11 @@
 function paintShop(carShop, colour) {
-    const newObject = [];
-    carShop.map(car => {
-        newObject.push(car)
-        if (car.colour === 'Pink' || car.colour === 'Red') {
+    const array = JSON.parse(JSON.stringify(carShop));
+    array.map(car => {
+        if (car.colour === 'Red') {
             car.colour = colour;
-        } else {
-            car.colour = car;
         }
     });
-    return newObject;
+    return array;
 };
-// paintShop(cars, 'Pink')
+
 module.exports = paintShop;
