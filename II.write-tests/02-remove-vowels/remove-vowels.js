@@ -11,9 +11,9 @@ function removeVowels(word) {
       character === "e" ||
       character === "u"
     ) {
-      result.push(character);
+      result.push("");
     } else {
-      result.push("_");
+      result.push(character);
     }
   });
 
